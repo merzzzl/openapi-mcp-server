@@ -1,0 +1,13 @@
+port: ":9090"
+enable_toon: false
+telemetry:
+  endpoint: "localhost:4317"
+  insecure: true
+servers:
+  - name: petstore
+    schema_url: "https://petstore3.swagger.io/api/v3/openapi.json"
+    base_url: "https://petstore3.swagger.io/api/v3"
+    allow:
+      - methods: ["GET", "POST", "PUT", "DELETE"]
+        regex: ".*"
+    block: []
