@@ -70,6 +70,13 @@ servers:
     block: []
 ```
 
+## Docker
+
+```sh
+docker pull ghcr.io/merzzzl/openapi-mcp-server:latest
+docker run -p 9090:9090 -v $(pwd)/config.yaml:/config.yaml ghcr.io/merzzzl/openapi-mcp-server:latest
+```
+
 ## Prerequisites
 
 - Go >= 1.24
